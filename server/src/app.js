@@ -29,6 +29,10 @@ async function create() {
     });
   });
 
+  expressApp.use("/", (req, res, next) => {
+    res.send("hello world");
+  });
+
   // version 1의 api router를 등록
   expressApp.use("/api/v1", apiRouter.v1);
 
