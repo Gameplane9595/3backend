@@ -63,9 +63,9 @@ async function create() {
 
   const app = {
     start() {
-      server.listen(config.port);
+      server.listen(config.Port);
       server.on("listening", () => {
-        console.log(`🚀 게시판 서버가 포트 ${config.port}에서 운영중입니다.`);
+        console.log(`🚀 게시판 서버가 포트 ${config.Port}에서 운영중입니다.`);
       });
     },
     stop() {
