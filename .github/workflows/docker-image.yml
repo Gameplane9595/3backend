@@ -12,7 +12,7 @@ env:
   DOCKER_HUB_USERNAME: ${{ secrets.DOCKER_HUB_USERNAME }}
   # AWS & Elastic Bean Stalk
   AWS_REGION: us-east-1
-  EB_ENVIRONMENT_NAME: OneLine-env-2
+  EB_ENVIRONMENT_NAME: OneLine-env
   EB_APPLICATION_NAME: One Line
   EB_DEPLOYMENT_PACKAGE: Dockerrun.aws.json
 
