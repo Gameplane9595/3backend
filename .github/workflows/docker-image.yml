@@ -58,7 +58,7 @@ jobs:
           echo '{
             "AWSEBDockerrunVersion": "1",
             "Image": {
-              "Name": "${{ env.DOCKER_HUB_USERNAME }}/server-server:latest",
+              "Name": "${{ env.DOCKER_HUB_USERNAME }}/backend:latest",
               "Update": "true"
             },
             "Ports": [
