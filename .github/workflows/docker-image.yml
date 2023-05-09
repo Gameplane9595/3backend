@@ -44,19 +44,19 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Set up environment variables
-      run: |
-        echo "DB_DEV_USERNAME=${{ secrets.DB_DEV_USERNAME }}" >> $GITHUB_ENV
-        echo "DB_DEV_PASSWORD=${{ secrets.DB_DEV_PASSWORD }}" >> $GITHUB_ENV
-        echo "DB_DEV_DATABASE=${{ secrets.DB_DEV_DATABASE }}" >> $GITHUB_ENV
-        echo "DB_DEV_HOST=${{ secrets.DB_DEV_HOST }}" >> $GITHUB_ENV
-        echo "DB_TEST_USERNAME=${{ secrets.DB_TEST_USERNAME }}" >> $GITHUB_ENV
-        echo "DB_TEST_PASSWORD=${{ secrets.DB_TEST_PASSWORD }}" >> $GITHUB_ENV
-        echo "DB_TEST_DATABASE=${{ secrets.DB_TEST_DATABASE }}" >> $GITHUB_ENV
-        echo "DB_TEST_HOST=${{ secrets.DB_TEST_HOST }}" >> $GITHUB_ENV
-        echo "DB_PROD_USERNAME=${{ secrets.DB_PROD_USERNAME }}" >> $GITHUB_ENV
-        echo "DB_PROD_PASSWORD=${{ secrets.DB_PROD_PASSWORD }}" >> $GITHUB_ENV
-        echo "DB_PROD_DATABASE=${{ secrets.DB_PROD_DATABASE }}" >> $GITHUB_ENV
-        echo "DB_PROD_HOST=${{ secrets.DB_PROD_HOST }}" >> $GITHUB_ENV
+        run: |
+          echo "DB_DEV_USERNAME=${{ secrets.DB_DEV_USERNAME }}" >> $GITHUB_ENV
+          echo "DB_DEV_PASSWORD=${{ secrets.DB_DEV_PASSWORD }}" >> $GITHUB_ENV
+          echo "DB_DEV_DATABASE=${{ secrets.DB_DEV_DATABASE }}" >> $GITHUB_ENV
+          echo "DB_DEV_HOST=${{ secrets.DB_DEV_HOST }}" >> $GITHUB_ENV
+          echo "DB_TEST_USERNAME=${{ secrets.DB_TEST_USERNAME }}" >> $GITHUB_ENV
+          echo "DB_TEST_PASSWORD=${{ secrets.DB_TEST_PASSWORD }}" >> $GITHUB_ENV
+          echo "DB_TEST_DATABASE=${{ secrets.DB_TEST_DATABASE }}" >> $GITHUB_ENV
+          echo "DB_TEST_HOST=${{ secrets.DB_TEST_HOST }}" >> $GITHUB_ENV
+          echo "DB_PROD_USERNAME=${{ secrets.DB_PROD_USERNAME }}" >> $GITHUB_ENV
+          echo "DB_PROD_PASSWORD=${{ secrets.DB_PROD_PASSWORD }}" >> $GITHUB_ENV
+          echo "DB_PROD_DATABASE=${{ secrets.DB_PROD_DATABASE }}" >> $GITHUB_ENV
+          echo "DB_PROD_HOST=${{ secrets.DB_PROD_HOST }}" >> $GITHUB_ENV
 
       - name: Build Number
         id: build-number
