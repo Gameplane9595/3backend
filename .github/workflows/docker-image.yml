@@ -11,7 +11,7 @@ env:
   # DockerHub
   DOCKER_HUB_USERNAME: ${{ secrets.DOCKER_HUB_USERNAME }}
   # AWS & Elastic Bean Stalk
-  AWS_REGION: us-east-1
+  AWS_REGION: ap-northeast-2
   EB_ENVIRONMENT_NAME: OneLine-env
   EB_APPLICATION_NAME: One Line
   EB_DEPLOYMENT_PACKAGE: Dockerrun.aws.json
@@ -78,7 +78,7 @@ jobs:
             },
             "Ports": [
               {
-                "ContainerPort": "3001"
+                "ContainerPort": "80"
               }
             ]
           }' > Dockerrun.aws.json
@@ -94,4 +94,4 @@ jobs:
           deployment_package: ${{ env.EB_DEPLOYMENT_PACKAGE }}
           version_label: ${{ steps.build-number.outputs.BUILD_NUMBER }}
           version_description: Version ${{steps.build-number.outputs.BUILD_NUMBER}} deployed via github actions ${{ github.sha }}
-          wait_for_deployment: 60
+          wait_for_deployment: 80

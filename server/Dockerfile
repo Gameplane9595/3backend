@@ -14,7 +14,7 @@ RUN npm ci
 COPY . .
 
 # 백엔드 서버 포트 번호 설정
-EXPOSE 3001
+EXPOSE 80
 
 # 백엔드 서버 실행
 CMD ["npm", "run", "start"]
